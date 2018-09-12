@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="635.0" prefWidth="1038.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="home.SignUpController">
+   <children>
+      <ScrollPane layoutX="207.0" layoutY="75.0" prefHeight="635.0" prefWidth="1038.0" vvalue="0.09" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <content>
+            <VBox prefHeight="1100.0" prefWidth="845.0">
+               <children>
+                  <ImageView fitHeight="131.0" fitWidth="128.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/Circled%20User%20Male_96px.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets left="120.0" top="30.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <JFXTextField fx:id="t1" labelFloat="true" prefHeight="35.0" prefWidth="428.0" promptText="Enter Name">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="50.0" />
+                     </VBox.margin>
+                  </JFXTextField>
+                  <JFXTextField fx:id="t2" labelFloat="true" prefHeight="25.0" prefWidth="391.0" promptText="Enter Username">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="50.0" />
+                     </VBox.margin>
+                  </JFXTextField>
+                  <JFXPasswordField fx:id="t3" labelFloat="true" prefHeight="35.0" prefWidth="391.0" promptText="Enter Password">
+                     <VBox.margin>
+                        <Insets top="50.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </JFXPasswordField>
+                  <JFXDatePicker fx:id="t4" prefHeight="33.0" prefWidth="553.0" promptText="Select D.O.B">
+                     <VBox.margin>
+                        <Insets top="50.0" />
+                     </VBox.margin>
+                  </JFXDatePicker>
+                  <JFXTextField fx:id="t5" labelFloat="true" prefHeight="25.0" prefWidth="391.0" promptText="Enter email_id">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="50.0" />
+                     </VBox.margin>
+                  </JFXTextField>
+                  <JFXTextField fx:id="t6" labelFloat="true" prefHeight="25.0" prefWidth="391.0" promptText="Enter Contact No.">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="50.0" />
+                     </VBox.margin>
+                  </JFXTextField>
+                  <JFXTextArea fx:id="t7" labelFloat="true" prefHeight="89.0" prefWidth="428.0" promptText="Enter   Address">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="50.0" />
+                     </VBox.margin>
+                  </JFXTextArea>
+                  <Pane prefHeight="187.0" prefWidth="428.0">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                     <children>
+                        <JFXButton layoutX="14.0" layoutY="69.0" onAction="#setSignUp" prefHeight="50.0" prefWidth="173.0" stylesheets="@../admin/style.css" text="Sign_Up" textAlignment="CENTER" textFill="#fff9f9" textOverrun="CLIP">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton layoutX="241.0" layoutY="69.0" onAction="#addNewCourse" prefHeight="50.0" prefWidth="173.0" stylesheets="@../admin/style.css" text="Cancel" textAlignment="CENTER" textFill="#fff9f9" textOverrun="CLIP">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                  </Pane>
+               </children>
+               <padding>
+                  <Insets left="300.0" />
+               </padding>
+            </VBox>
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

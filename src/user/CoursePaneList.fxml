@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="deleteUpdatePane" prefHeight="376.0" prefWidth="862.0" style="-fx-background-color: #354054;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="user.CoursePaneListController">
+   <children>
+      <JFXComboBox fx:id="listCourse" cache="true" focusColor="#354054" layoutX="204.0" layoutY="132.0" prefHeight="47.0" prefWidth="527.0" promptText="Select" style="-fx-border-color: orange; -fx-border-width: 4; -fx-background-radius: 2em; -fx-border-radius: 2em;" stylesheets="@../admin/style.css" unFocusColor="#354054" visibleRowCount="5">
+         <padding>
+            <Insets left="15.0" />
+         </padding>
+      </JFXComboBox>
+      <JFXButton layoutX="421.0" layoutY="287.0" onAction="#setUpdatePane" prefHeight="45.0" prefWidth="143.0" stylesheets="@../admin/style.css" text="Update" textFill="#ebebeb">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="599.0" layoutY="287.0" prefHeight="45.0" prefWidth="143.0" stylesheets="@../admin/style.css" text="Back" textFill="#ebebeb">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="241.0" layoutY="287.0" onAction="#DeleteCourse" prefHeight="45.0" prefWidth="143.0" stylesheets="@../admin/style.css" text="Start Test" textFill="#ebebeb">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

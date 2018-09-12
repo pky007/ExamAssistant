@@ -1,0 +1,49 @@
+.combo-box,
+.choice-box {
+    -fx-font-size: 18px;
+    -fx-font-weight: bold
+   
+   
+}
+
+.combo-box .list-cell:filled:selected .text,
+.choice-box .list-cell:filled:selected .text {
+    -fx-fill: white;
+     -fx-prompt-text-fill: orange;
+    
+}
+
+
+.button{
+    
+   
+    -fx-border-color: orange;
+    -fx-border-width:3; 
+    -fx-border-radius: 3em;
+    -fx-background-radius: 3em;    
+    
+}
+
+.button:pressed{
+    
+    -fx-background-color: goldenrod;
+   
+    
+}
+
+
+#btn_nxt1:hover{
+     -fx-background-color: orange;
+    
+}
+
+
+.input{
+    
+    -fx-text-fill:white;
+    -fx-prompt-text-fill: orange;
+    
+    
+    
+    
+}

@@ -1,0 +1,76 @@
+.combo-box,
+.choice-box {
+    -fx-font-size: 18px;
+    -fx-font-weight: bold
+   
+   
+}
+
+.combo-box .list-cell:filled:selected .text,
+.choice-box .list-cell:filled:selected .text {
+    -fx-fill: white;
+}
+
+
+.button{
+    
+   
+    -fx-border-color: orange;
+    -fx-border-width:3; 
+    -fx-border-radius: 3em;
+    -fx-background-radius: 3em;    
+    
+}
+.button:pressed{
+    
+    -fx-background-color: goldenrod;
+   
+    
+}
+
+.textArea{
+    
+    -fx-text-fill : white;
+    
+}
+
+.pane:hover{
+    
+    -fx-background-color: gray;
+   
+    
+}
+
+.radio_btn:hover{
+    
+    -fx-background-color: green;
+   
+    
+}
+
+
+.pane1{
+     -fx-background-color: #297FB8;
+    
+}
+.pane2{
+     -fx-background-color:#27AE61 ;
+    
+}
+.pane3{
+     -fx-background-color:  orange;
+    
+}
+.pane4{
+     -fx-background-color:   #1BBC9B;
+    
+}
+.pane5{
+     -fx-background-color:   #E84C3D;
+    
+}
+.pane6{
+     -fx-background-color:   #34495E
+         ;
+    
+}

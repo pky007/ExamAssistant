@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="633.0" prefWidth="1000.0" style="-fx-background-color: #354054;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="user.FeedbackController">
+   <children>
+      <Pane layoutX="-1.0" layoutY="-3.0" prefHeight="59.0" prefWidth="1000.0" style="-fx-background-color: #2F394B;" AnchorPane.leftAnchor="-100.0" AnchorPane.rightAnchor="-150.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="549.0" prefHeight="58.0" prefWidth="102.0" text="Notice " textFill="#eee8e8">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Label>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Pane>
+      <HBox layoutX="72.0" layoutY="273.0" prefHeight="59.0" prefWidth="609.0">
+         <children>
+            <Label prefHeight="58.0" prefWidth="607.0" text="1. Always read the questions carefully." textFill="#09e9f5">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox layoutX="72.0" layoutY="191.0" prefHeight="59.0" prefWidth="609.0" />
+      <Label layoutX="26.0" layoutY="162.0" prefHeight="58.0" prefWidth="607.0" text="Instruction:" textFill="#07d4f8">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+   </children>
+   <padding>
+      <Insets left="50.0" />
+   </padding>
+</AnchorPane>

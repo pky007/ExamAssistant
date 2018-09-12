@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="rootUser" prefHeight="633.0" prefWidth="930.0" style="-fx-background-color: #354054;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="user.UserPaneController">
+   <children>
+      <Pane layoutX="322.0" layoutY="162.0" onMouseClicked="#setStudenAttemptPane" prefHeight="135.0" prefWidth="286.0" style="-fx-border-radius: 1em; -fx-background-radius: 7;" stylesheets="@userhome.css">
+         <children>
+            <ImageView fitHeight="56.0" fitWidth="57.0" layoutX="14.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Today_64px.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="90.0" layoutY="31.0" prefHeight="26.0" prefWidth="170.0" text="Total Attempt Exam" textFill="#fcf9f9">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <Label fx:id="labelTotalAttemptExam" layoutX="128.0" layoutY="57.0" prefHeight="48.0" prefWidth="94.0" text="0" textFill="#fcf9f9">
+               <font>
+                  <Font name="System Bold" size="39.0" />
+               </font>
+            </Label>
+            <Label layoutX="17.0" layoutY="100.0" prefHeight="26.0" prefWidth="197.0" text="ATTEMPT EXAM" textFill="#fcf9f9">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+         <styleClass>
+            <String fx:value="pane2" />
+            <String fx:value="pane" />
+         </styleClass>
+      </Pane>
+      <Pane layoutX="15.0" layoutY="162.0" onMouseClicked="#setExamPane" prefHeight="135.0" prefWidth="286.0" style="-fx-border-radius: 1em; -fx-background-radius: 7;" stylesheets="@userhome.css">
+         <children>
+            <ImageView fitHeight="56.0" fitWidth="56.0" layoutX="14.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Align%20Center_96px.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="128.0" layoutY="27.0" prefHeight="25.0" prefWidth="114.0" text="Total Exam" textFill="#fcf9f9">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <Label fx:id="labelTotalExam" layoutX="128.0" layoutY="52.0" prefHeight="50.0" prefWidth="94.0" text="0" textFill="#fcf9f9">
+               <font>
+                  <Font name="System Bold" size="39.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="95.0" prefHeight="26.0" prefWidth="131.0" text="EXAM" textFill="#fcf9f9">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+         <styleClass>
+            <String fx:value="pane1" />
+            <String fx:value="pane" />
+         </styleClass>
+      </Pane>
+      <Pane layoutX="629.0" layoutY="162.0" onMouseClicked="#setResultPane" prefHeight="135.0" prefWidth="286.0" style="-fx-border-radius: 1em; -fx-background-radius: 7;" stylesheets="@userhome.css">
+         <children>
+            <ImageView fitHeight="48.0" fitWidth="48.0" layoutX="30.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Trophy_104px.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="144.0" layoutY="23.0" prefHeight="26.0" prefWidth="114.0" text="Result" textFill="#fcf9f9">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="30.0" layoutY="95.0" onMouseClicked="#setResultPane" prefHeight="26.0" prefWidth="131.0" text="RESULT " textFill="#fcf9f9">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+         <styleClass>
+            <String fx:value="pane" />
+            <String fx:value="pane3" />
+         </styleClass>
+      </Pane>
+      <Pane layoutX="322.0" layoutY="324.0" onMouseClicked="#setSettingPane" prefHeight="135.0" prefWidth="286.0" style="-fx-border-radius: 1em; -fx-background-radius: 7;" stylesheets="@userhome.css">
+         <children>
+            <ImageView fitHeight="48.0" fitWidth="48.0" layoutX="31.0" layoutY="38.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Settings_52px.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="128.0" layoutY="27.0" prefHeight="25.0" prefWidth="114.0" text="Setting" textFill="#fcf9f9">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="95.0" prefHeight="26.0" prefWidth="131.0" text="SETTINGS" textFill="#fcf9f9">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+         <styleClass>
+            <String fx:value="pane" />
+            <String fx:value="pane6" />
+         </styleClass>
+      </Pane>
+      <Pane layoutX="629.0" layoutY="324.0" onMouseClicked="#setInstruction" prefHeight="135.0" prefWidth="286.0" style="-fx-background-radius: 7; -fx-border-radius: 1em;" stylesheets="@userhome.css">
+         <children>
+            <ImageView fitHeight="48.0" fitWidth="48.0" layoutX="13.0" layoutY="38.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Question_96px_1.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="127.0" layoutY="26.0" prefHeight="25.0" prefWidth="114.0" text="about" textFill="#fcf9f9">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="108.0" prefHeight="26.0" prefWidth="131.0" text="ABOUT" textFill="#fcf9f9">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+         <styleClass>
+            <String fx:value="pane" />
+            <String fx:value="pane4" />
+         </styleClass>
+      </Pane>
+      <Pane layoutX="15.0" layoutY="324.0" onMouseClicked="#setFeedBackPane" prefHeight="135.0" prefWidth="286.0" style="-fx-border-radius: 1em; -fx-background-radius: 7;" stylesheets="@userhome.css">
+         <children>
+            <ImageView fitHeight="48.0" fitWidth="48.0" layoutX="29.0" layoutY="39.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Feedback_100px.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="143.0" layoutY="27.0" prefHeight="26.0" prefWidth="141.0" text="Notice" textFill="#fcf9f9">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="21.0" layoutY="108.0" prefHeight="26.0" prefWidth="131.0" text="NOTICE" textFill="#fcf9f9">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+         </children>
+         <styleClass>
+            <String fx:value="pane" />
+            <String fx:value="pane5" />
+         </styleClass>
+      </Pane>
+      <Pane prefHeight="79.0" prefWidth="930.0" style="-fx-background-color: #354054;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="254.0" layoutY="5.0" prefHeight="70.0" prefWidth="423.0" text="\@Exam_Assistant" textFill="#fcf9f9">
+               <font>
+                  <Font name="System Bold" size="48.0" />
+               </font>
+               <effect>
+                  <DropShadow blurType="TWO_PASS_BOX" color="WHITE" height="112.92" radius="45.582499999999996" spread="0.34" width="71.41" />
+               </effect>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

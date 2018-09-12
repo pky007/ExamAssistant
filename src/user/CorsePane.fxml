@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="375.0" prefWidth="732.0" style="-fx-background-color: #354054;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="user.CorsePaneController">
+   <children>
+      <Pane layoutX="71.0" layoutY="18.0" prefHeight="133.0" prefWidth="217.0" style="-fx-background-color: #354060; -fx-background-radius: 10;">
+         <children>
+            <Label fx:id="l0" layoutX="46.0" layoutY="30.0" prefHeight="68.0" prefWidth="159.0" textFill="#fffafa">
+               <font>
+                  <Font name="System Bold" size="50.0" />
+               </font>
+            </Label>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Pane>
+      <Label fx:id="l1" alignment="CENTER" contentDisplay="CENTER" layoutX="330.0" layoutY="52.0" prefHeight="47.0" prefWidth="282.0" style="-fx-background-color: gray; -fx-background-radius: 10;" text="Label" textAlignment="CENTER" textFill="#f2eded" textOverrun="CLIP">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Label>
+      <Label fx:id="l2" alignment="CENTER" contentDisplay="CENTER" layoutX="330.0" layoutY="117.0" prefHeight="47.0" prefWidth="282.0" style="-fx-background-color: gray; -fx-background-radius: 10;" text="Label" textAlignment="CENTER" textFill="#f2eded" textOverrun="CLIP">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Label>
+      <Label fx:id="l3" alignment="CENTER" contentDisplay="CENTER" layoutX="330.0" layoutY="185.0" prefHeight="47.0" prefWidth="282.0" style="-fx-background-color: gray; -fx-background-radius: 10;" text="Label" textAlignment="CENTER" textFill="#f2eded" textOverrun="CLIP">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Label>
+      <Label fx:id="l4" alignment="CENTER" contentDisplay="CENTER" layoutX="330.0" layoutY="251.0" prefHeight="47.0" prefWidth="282.0" style="-fx-background-color: gray; -fx-background-radius: 10;" text="Label" textAlignment="CENTER" textFill="#f2eded" textOverrun="CLIP">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Label>
+      <JFXButton layoutX="80.0" layoutY="186.0" onAction="#setCourseList" prefHeight="45.0" prefWidth="143.0" stylesheets="@userhome.css" text="Start" textFill="#ebebeb">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

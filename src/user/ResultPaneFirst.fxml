@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootTest" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="636.0" prefWidth="1000.0" style="-fx-background-color: #354054;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="user.ResultPaneFirstController">
+   <children>
+      <Pane fx:id="selectCoursePane" layoutX="192.0" layoutY="131.0">
+         <children>
+            <JFXComboBox fx:id="courseList" cache="true" focusColor="#354054" prefHeight="47.0" prefWidth="527.0" promptText="Select" style="-fx-border-color: orange; -fx-border-width: 4; -fx-background-radius: 2em; -fx-border-radius: 2em;" stylesheets="@userhome.css" unFocusColor="#354054" visibleRowCount="5">
+               <padding>
+                  <Insets left="15.0" />
+               </padding>
+            </JFXComboBox>
+            <JFXButton layoutX="33.0" layoutY="122.0" onAction="#setResultPane" prefHeight="45.0" prefWidth="143.0" stylesheets="@userhome.css" text="Ok" textFill="#ebebeb">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="370.0" layoutY="122.0" onAction="#setCourseList" prefHeight="45.0" prefWidth="143.0" stylesheets="@userhome.css" text="Cancel" textFill="#ebebeb">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+      <Pane layoutY="12.0" prefHeight="59.0" prefWidth="856.0" style="-fx-background-color: #2F394B;" AnchorPane.leftAnchor="-100.0" AnchorPane.rightAnchor="-150.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label fx:id="label" layoutX="443.0" layoutY="1.0" prefHeight="58.0" prefWidth="316.0" text="Select Course " textFill="#eee8e8">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Label>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Pane>
+   </children>
+   <padding>
+      <Insets left="50.0" />
+   </padding>
+</AnchorPane>

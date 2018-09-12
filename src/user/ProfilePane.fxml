@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="635.0" prefWidth="1038.0" style="-fx-background-color: #354054;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="user.ProfilePaneController">
+   <children>
+      <ScrollPane layoutX="207.0" layoutY="95.0" prefHeight="540.0" prefWidth="1038.0" style="-fx-background-color: #354054;" stylesheets="@../home/loginandsignup.css" vvalue="0.06" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="95.0">
+         <content>
+            <VBox prefHeight="1100.0" prefWidth="1016.0" style="-fx-background-color: #354054;">
+               <children>
+                  <ImageView fitHeight="131.0" fitWidth="128.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/Circled%20User%20Male_96px.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets left="120.0" top="30.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <JFXTextField fx:id="t2" alignment="CENTER" editable="false" focusColor="#00e1fa" labelFloat="true" prefHeight="25.0" prefWidth="391.0" promptText=" Username" styleClass="input" stylesheets="@../admin/style.css" unFocusColor="#00ff8c">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="50.0" />
+                     </VBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="CLOSED_HAND" />
+                     </cursor>
+                  </JFXTextField>
+                  <JFXTextField fx:id="t1" focusColor="#00e1fa" labelFloat="true" prefHeight="35.0" prefWidth="428.0" promptText="Enter Name" styleClass="input" stylesheets="@../admin/style.css" unFocusColor="#00ff8c">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="50.0" />
+                     </VBox.margin>
+                  </JFXTextField>
+                  <JFXPasswordField fx:id="t3" focusColor="#00e1fa" labelFloat="true" prefHeight="35.0" prefWidth="391.0" promptText="Enter Password" style="-fx-background-color: #354054; -fx-border-color: #354054;" styleClass="input" stylesheets="@../admin/style.css" unFocusColor="#00ff8c">
+                     <VBox.margin>
+                        <Insets top="50.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </JFXPasswordField>
+                  <JFXDatePicker fx:id="t4" prefHeight="33.0" prefWidth="553.0" promptText="Select D.O.B" styleClass="choice-box" stylesheets="@../admin/style.css">
+                     <VBox.margin>
+                        <Insets top="50.0" />
+                     </VBox.margin>
+                  </JFXDatePicker>
+                  <JFXTextField fx:id="t5" focusColor="#00e1fa" labelFloat="true" prefHeight="25.0" prefWidth="391.0" promptText="Enter email_id" styleClass="input" stylesheets="@../admin/style.css" unFocusColor="#00ff8c">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="50.0" />
+                     </VBox.margin>
+                  </JFXTextField>
+                  <JFXTextField fx:id="t6" focusColor="#00e1fa" labelFloat="true" prefHeight="25.0" prefWidth="391.0" promptText="Enter Contact No." styleClass="input" stylesheets="@../admin/style.css" unFocusColor="#00ff8c">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="50.0" />
+                     </VBox.margin>
+                  </JFXTextField>
+                  <JFXTextArea fx:id="t7" focusColor="#00e1fa" labelFloat="true" prefHeight="89.0" prefWidth="428.0" promptText="Enter   Address" styleClass="input" stylesheets="@../admin/style.css" unFocusColor="#00ff8c">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="50.0" />
+                     </VBox.margin>
+                  </JFXTextArea>
+                  <Pane prefHeight="187.0" prefWidth="428.0">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                     <children>
+                        <JFXButton layoutX="14.0" layoutY="69.0" onAction="#setUpdate" prefHeight="47.0" prefWidth="166.0" stylesheets="@../admin/style.css" text="Update " textAlignment="CENTER" textFill="#fff9f9" textOverrun="CLIP">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton layoutX="250.0" layoutY="69.0" onAction="#isEmpty" prefHeight="46.0" prefWidth="164.0" stylesheets="@../admin/style.css" text="Cancel" textAlignment="CENTER" textFill="#fff9f9" textOverrun="CLIP">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                  </Pane>
+               </children>
+               <padding>
+                  <Insets left="300.0" />
+               </padding>
+            </VBox>
+         </content>
+      </ScrollPane>
+      <Pane prefHeight="59.0" prefWidth="1038.0" style="-fx-background-color: #2F394B;" AnchorPane.leftAnchor="-50.0" AnchorPane.rightAnchor="-150.0">
+         <children>
+            <Label fx:id="label" layoutX="412.0" layoutY="1.0" prefHeight="58.0" prefWidth="207.0" text="Update Profile" textFill="#eee8e8">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Label>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Pane>
+   </children>
+</AnchorPane>

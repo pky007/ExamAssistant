@@ -1,0 +1,32 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+
+.scroll-bar:vertical {
+    -fx-pref-width: 20;
+    -fx-background-color: gray;
+    -fx-padding: 3;
+}
+
+/*.scroll-bar:horizontal {
+    -fx-pref-height: 16.5;
+    -fx-padding: 3;
+}
+
+/*.scroll-bar, .scroll-bar:pressed, .scroll-bar:focused {
+    -fx-font-size: 15;
+}*/
+
+
+
+
+.btn:hover{
+    -fx-background-color: orange; 
+}
+
+.paneTop{
+    
+   -fx-background-color:linear-gradient(to top,#5AB0E2,#283C50);
+    
+}

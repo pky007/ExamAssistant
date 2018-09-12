@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="rootPane" prefWidth="1000.0" style="-fx-background-color: #354054;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="admin.DeleteAndUpdateQuestionController">
+   <children>
+      <Pane fx:id="selectRoot" layoutX="205.0" layoutY="181.0" prefHeight="178.0" prefWidth="548.0">
+         <children>
+            <JFXComboBox fx:id="course_list" focusColor="#0bffff" labelFloat="true" layoutX="6.0" layoutY="14.0" prefHeight="46.0" prefWidth="536.0" promptText="Select a course" styleClass="combo-box-popup" stylesheets="@style.css" unFocusColor="#07f867" />
+            <JFXButton layoutX="387.0" layoutY="113.0" onAction="#cancelCourse" prefHeight="51.0" prefWidth="150.0" stylesheets="@style.css" text="Cancel" textAlignment="CENTER" textFill="#fff9f9" textOverrun="CLIP">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="12.0" layoutY="113.0" onAction="#setCoursepane" prefHeight="51.0" prefWidth="150.0" stylesheets="@style.css" text="Ok" textAlignment="CENTER" textFill="#fff9f9" textOverrun="CLIP">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+      <Pane layoutX="-16.0" layoutY="20.0" prefHeight="59.0" prefWidth="856.0" style="-fx-background-color: #2F394B;" AnchorPane.leftAnchor="-100.0" AnchorPane.rightAnchor="-200.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="456.0" layoutY="1.0" prefHeight="58.0" prefWidth="192.0" text="Select Course" textFill="#eee8e8">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Label>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Pane>
+      <Pane fx:id="coursePane" layoutX="210.0" layoutY="110.0" prefHeight="539.0" prefWidth="527.0" style="-fx-background-color: #354060;" visible="false">
+         <children>
+            <ImageView fitHeight="63.0" fitWidth="63.0" layoutX="235.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Page%20Overview%202_96px.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="l1" alignment="CENTER" contentDisplay="CENTER" layoutY="112.0" prefHeight="47.0" prefWidth="527.0" style="-fx-background-color: gray;" text="Label" textAlignment="CENTER" textFill="#f2eded" textOverrun="CLIP">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Label>
+            <Label fx:id="l2" alignment="CENTER" contentDisplay="CENTER" layoutY="169.0" prefHeight="47.0" prefWidth="527.0" style="-fx-background-color: gray;" text="Label" textAlignment="CENTER" textFill="#f2eded" textOverrun="CLIP">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Label>
+            <Label fx:id="l3" alignment="CENTER" contentDisplay="CENTER" layoutY="227.0" prefHeight="47.0" prefWidth="527.0" style="-fx-background-color: gray;" text="Label" textAlignment="CENTER" textFill="#f2eded" textOverrun="CLIP">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Label>
+            <Label fx:id="l4" alignment="CENTER" contentDisplay="CENTER" layoutY="286.0" prefHeight="47.0" prefWidth="527.0" style="-fx-background-color: gray;" text="Label" textAlignment="CENTER" textFill="#f2eded" textOverrun="CLIP">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Label>
+            <Label fx:id="l6" alignment="CENTER" contentDisplay="CENTER" layoutY="401.0" prefHeight="47.0" prefWidth="527.0" style="-fx-background-color: gray;" text="Label" textAlignment="CENTER" textFill="#f2eded" textOverrun="CLIP">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Label>
+            <JFXButton layoutX="21.0" layoutY="474.0" onAction="#setAddQuestionPane" prefHeight="45.0" prefWidth="192.0" stylesheets="@style.css" text="Update Questions" textFill="#ebebeb">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="306.0" layoutY="474.0" onAction="#setBack" prefHeight="45.0" prefWidth="192.0" stylesheets="@style.css" text="Back" textFill="#ebebeb">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </JFXButton>
+            <Label fx:id="l5" alignment="CENTER" contentDisplay="CENTER" layoutY="345.0" prefHeight="47.0" prefWidth="527.0" style="-fx-background-color: gray;" text="Label" textAlignment="CENTER" textFill="#f2eded" textOverrun="CLIP">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Label>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Pane>
+   </children>
+   <padding>
+      <Insets left="50.0" />
+   </padding>
+</AnchorPane>

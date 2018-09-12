@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.SepiaTone?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="633.0" prefWidth="1000.0" style="-fx-background-color: #354054;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.111" fx:controller="user.AboutController">
+   <children>
+      <Label layoutX="323.0" layoutY="21.0" prefHeight="70.0" prefWidth="354.0" text="Exam_Assistant" textFill="#fcf9f9">
+         <font>
+            <Font name="System Bold" size="48.0" />
+         </font>
+         <effect>
+            <DropShadow blurType="TWO_PASS_BOX" color="WHITE" height="112.92" radius="45.582499999999996" spread="0.34" width="71.41" />
+         </effect>
+      </Label>
+      <Label layoutX="346.0" layoutY="157.0" prefHeight="60.0" prefWidth="309.0" text="This Project Made by " textFill="#fcf9f9">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+         <effect>
+            <SepiaTone />
+         </effect>
+      </Label>
+      <Label layoutX="279.0" layoutY="282.0" prefHeight="70.0" prefWidth="443.0" text=" MCA Student DEWAN College" textFill="#fcf9f9">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+         <effect>
+            <SepiaTone />
+         </effect>
+      </Label>
+   </children>
+</AnchorPane>

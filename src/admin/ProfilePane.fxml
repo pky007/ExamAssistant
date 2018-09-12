@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="s_root" prefHeight="633.0" prefWidth="1100.0" style="-fx-background-color: #354054;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="admin.ProfilePaneController">
+   <children>
+      <Pane prefHeight="59.0" prefWidth="1100.0" style="-fx-background-color: #2F394B;" AnchorPane.leftAnchor="-50.0" AnchorPane.rightAnchor="-150.0">
+         <children>
+            <Label fx:id="label" layoutX="488.0" layoutY="1.0" prefHeight="58.0" prefWidth="225.0" text="Profile Update" textFill="#eee8e8">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Label>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Pane>
+      <Pane fx:id="pane1" layoutX="246.0" layoutY="180.0" prefHeight="154.0" prefWidth="473.0">
+         <children>
+            <JFXButton layoutX="149.0" layoutY="104.0" onAction="#chkPassword" prefHeight="50.0" prefWidth="173.0" stylesheets="@style.css" text="Ok" textAlignment="CENTER" textFill="#fff9f9" textOverrun="CLIP">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </JFXButton>
+            <JFXPasswordField fx:id="t1" focusColor="#00e2ff" labelFloat="true" layoutX="2.0" layoutY="21.0" prefHeight="44.0" prefWidth="473.0" promptText="Enter old  password" style="-fx-border-color: #354054; -fx-background-color: #354054;" styleClass="input" stylesheets="@style.css" unFocusColor="#00fff2">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </JFXPasswordField>
+         </children>
+      </Pane>
+      <Pane fx:id="pane2" layoutX="262.0" layoutY="122.0" visible="false">
+         <children>
+            <JFXTextField fx:id="t11" focusColor="#0098ff" labelFloat="true" prefHeight="44.0" prefWidth="473.0" promptText="Enter_name" styleClass="input" stylesheets="@style.css" unFocusColor="#00fff2">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </JFXTextField>
+            <JFXPasswordField fx:id="t22" focusColor="#0098ff" labelFloat="true" layoutY="91.0" prefHeight="44.0" prefWidth="473.0" promptText="Enter_new_password" style="-fx-border-color: #354054; -fx-background-color: #354054;" styleClass="input" stylesheets="@style.css" unFocusColor="#00fff2">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </JFXPasswordField>
+            <JFXTextField fx:id="t33" focusColor="#0098ff" labelFloat="true" layoutY="190.0" prefHeight="44.0" prefWidth="473.0" promptText="Enter_e-mail_id" styleClass="input" stylesheets="@style.css" unFocusColor="#00fff2">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </JFXTextField>
+            <JFXButton layoutX="26.0" layoutY="269.0" onAction="#updateProfile" prefHeight="50.0" prefWidth="173.0" stylesheets="@style.css" text="Update" textAlignment="CENTER" textFill="#fff9f9" textOverrun="CLIP">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="272.0" layoutY="269.0" onAction="#cancel" prefHeight="50.0" prefWidth="173.0" stylesheets="@style.css" text="Cancel" textAlignment="CENTER" textFill="#fff9f9" textOverrun="CLIP">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

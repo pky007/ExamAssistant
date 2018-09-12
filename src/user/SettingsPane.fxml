@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" fx:id="s_root" prefHeight="633.0" prefWidth="1100.0" style="-fx-background-color: #354054;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.111" fx:controller="user.SettingsPaneController">
+   <children>
+      <Pane layoutX="407.0" layoutY="129.0" onMouseClicked="#setProfilePane" prefHeight="135.0" prefWidth="286.0" style="-fx-border-radius: 1em; -fx-background-radius: 7;" stylesheets="@userhome.css">
+         <children>
+            <ImageView fitHeight="56.0" fitWidth="56.0" layoutX="115.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Resume_100px.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="89.0" layoutY="95.0" prefHeight="26.0" prefWidth="143.0" text="Update Profile" textFill="#fcf9f9">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+         <styleClass>
+            <String fx:value="pane1" />
+            <String fx:value="pane" />
+         </styleClass>
+      </Pane>
+      <Pane prefHeight="59.0" prefWidth="1100.0" style="-fx-background-color: #2F394B;" AnchorPane.leftAnchor="-50.0" AnchorPane.rightAnchor="-150.0">
+         <children>
+            <Label fx:id="label" layoutX="488.0" layoutY="1.0" prefHeight="58.0" prefWidth="124.0" text="Settings" textFill="#eee8e8">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Label>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Pane>
+   </children>
+</AnchorPane>

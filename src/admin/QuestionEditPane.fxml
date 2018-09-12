@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="633.0" style="-fx-background-color: #354054;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="admin.QuestionEditPaneController">
+   <children>
+      <Pane fx:id="questionPane" layoutX="189.0" layoutY="16.0">
+         <children>
+            <GridPane fx:id="qlist" layoutX="196.0" layoutY="32.0" prefHeight="496.0" prefWidth="516.0" vgap="10.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="122.0" minHeight="0.0" prefHeight="88.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="122.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                  <RowConstraints vgrow="SOMETIMES" />
+                  <RowConstraints vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="82.0" prefHeight="70.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="34.0" prefHeight="28.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <JFXTextArea fx:id="t1" focusColor="#00c4f5" labelFloat="true" prefHeight="138.0" prefWidth="516.0" promptText="Enter Question here" styleClass="input" stylesheets="@style.css" unFocusColor="#02ff7c">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets />
+                     </GridPane.margin>
+                     <padding>
+                        <Insets left="5.0" right="2.0" top="2.0" />
+                     </padding>
+                  </JFXTextArea>
+                  <JFXTextField fx:id="t3" focusColor="#08f5ff" labelFloat="true" prefHeight="32.0" prefWidth="516.0" promptText="Enter Option_2" styleClass="input" stylesheets="@style.css" unFocusColor="#0af206" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="t2" focusColor="#08f5ff" labelFloat="true" prefHeight="32.0" prefWidth="516.0" promptText="Enter Option_1" styleClass="input" stylesheets="@style.css" unFocusColor="#0af206" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="t4" focusColor="#08f5ff" labelFloat="true" prefHeight="25.0" prefWidth="516.0" promptText="Enter Option_3" styleClass="input" stylesheets="@style.css" unFocusColor="#0af206" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="t5" focusColor="#08f5ff" labelFloat="true" prefHeight="42.0" prefWidth="516.0" promptText="Enter Option_4" styleClass="input" stylesheets="@style.css" unFocusColor="#0af206" GridPane.rowIndex="4">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXComboBox fx:id="t6" focusColor="#08f5ff" labelFloat="true" prefHeight="43.0" prefWidth="516.0" promptText="Select Correct Option" stylesheets="@style.css" unFocusColor="#09f57b" GridPane.rowIndex="5" />
+               </children>
+            </GridPane>
+            <Label prefHeight="65.0" prefWidth="146.0" text="Question .No" textFill="#08f5ff">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </Label>
+            <Label fx:id="l1" layoutX="42.0" layoutY="47.0" prefHeight="51.0" prefWidth="78.0" textFill="#08f5ff">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </Label>
+            <JFXButton layoutX="200.0" layoutY="550.0" onAction="#isUpdating" prefHeight="51.0" prefWidth="165.0" stylesheets="@style.css" text="Update" textAlignment="CENTER" textFill="#fff9f9" textOverrun="CLIP">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="541.0" layoutY="550.0" onAction="#setBackQuestionTable" prefHeight="51.0" prefWidth="165.0" stylesheets="@style.css" text="Back" textAlignment="CENTER" textFill="#fff9f9" textOverrun="CLIP">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+   </children>
+   <padding>
+      <Insets left="50.0" />
+   </padding>
+</AnchorPane>
